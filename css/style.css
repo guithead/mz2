@@ -1,0 +1,578 @@
+/*GENERAL*/
+
+html {
+	/*scroll-behavior: smooth;*/
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #000;
+}
+
+.main-heading {
+	background-color: #feda6a;
+	padding: 2.5rem;
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.main-heading-about {
+	color: #000;
+	background-color: #feda6a;
+	padding: 2.5rem;
+	text-align: center;
+}
+
+.main-heading-contact {
+	background-color: #feda6a;
+	padding: 2.5rem;
+	margin-bottom: -6rem;
+	z-index: 20;
+	text-align: center;
+}
+
+.button-custom {
+	color: #000;
+	border: 1px solid #000;
+	padding: 1rem 2rem;
+	font-weight: bold;
+	background-color: #feda6a;
+	border-radius: 0.1rem;
+}
+
+.button-custom:hover,
+.button-custom:active,
+.button-custom:focus {
+	text-decoration: none;
+	background-color: #000;
+	color: #fff;
+	transition: all 1s ease;
+	outline: none;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 25px;
+	right: 30px;
+	z-index: 30;
+
+}
+
+.fa-chevron-up {
+	color: #2f302f;
+}
+
+
+@media(hover: hover) {
+   .fa-chevron-up:hover {
+    	color: #feda6a;
+		transition: color .5s ease;
+    }
+}
+
+/*NAVBAR*/
+
+.navbar {
+	padding: 0.8rem 0;
+}
+
+.navbar button:focus {
+	outline: none;
+}
+
+.fa-circle {
+	font-size: 1.8rem;
+	color: #000;
+}
+
+.navbar-nav {
+	border-bottom: 1px solid #000;
+}
+
+.navbar-nav li {
+	text-transform: uppercase;
+}
+
+.navbar-nav li a {
+	color: #000;
+	margin: 0.5rem 2rem;
+	margin-bottom: 0;
+}
+
+.navbar-nav li a:hover {
+
+	color: #feda6a;
+	transition: color .5s ease;
+}
+
+/*HEADER*/
+
+.page-header {
+	height: 100vh;
+	background-image: url('../img/header-cover.jpg');
+  	background-size: cover;
+  	background-position: 40% 70%;
+  	position: relative;
+}
+
+.title {
+	position: absolute;
+	top: 25%;
+	left: 45%;
+	margin-top: 3rem;
+}
+
+.title h1 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.title p {
+	font-size: 2.5rem;
+}
+
+/*ABOUT*/
+
+.about {
+	background-color: #000;
+	color: #f4f4f4;
+}
+
+.about p {
+	font-size: 1.2rem;
+}
+
+.hashtags {
+	padding: 3rem 2rem;
+}
+
+/*MUSIC*/
+
+.music {
+	background-color: #f4f4f4;
+	background-image: url('../img/kabel.JPG');
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 492px;
+    object-fit: cover;
+}
+
+.video-link {
+	cursor: pointer;
+}
+
+.video-yt{
+	position: absolute;
+	top: 20%;
+
+}
+
+audio, .mejs__container {
+	max-width: 100%;
+	width: 100%;
+}
+
+audio:focus {
+	outline: none;
+}
+
+.mejs__mediaelement, .mejs__container,
+.mejs__controls{
+	background: #494d49;
+	border-radius: .3rem;
+}
+
+.anatomy {
+	background-color: #000;
+	color: #f4f4f4;
+}
+
+.anatomy a {
+	filter: grayscale(1);
+	transition: filter 2s ease;
+	object-fit: cover;
+}
+
+.anatomy a:hover,
+.anatomy a:active,
+.anatomy a:focus {
+	filter: grayscale(0);
+	outline: none;
+}
+
+.anatomy p {
+	font-size: 1.25rem;
+	padding: 1rem;
+}
+
+.anatomy p:nth-child(2) {
+	margin-bottom: 2rem;
+}
+
+.anat-img {
+	object-fit: cover;
+}
+
+/*UPCOMING*/
+
+.upcoming {
+	background-color: #f4f4f4;
+	background-image: url('../img/grey-grain.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+}
+
+.upcoming .card {
+	margin: 1.5rem auto;
+	max-width: 70%;
+	background-color: #f4f4f4;
+}
+
+.card-border {
+	border: solid 1px #cecece;
+}
+
+#previous {
+	display: none;
+}
+
+.datum {
+	padding: 1rem;
+}
+
+.datum > p {
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#new a, #previous a {
+	color: #feda6a ;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.button-wrapper {
+	margin: 1rem auto;
+	margin-bottom: 4rem;
+}
+
+.previous-btn {
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: underline !important;
+}
+
+/*CONTACT*/
+
+.contact {
+	background-color: #000;
+}
+
+.contact-pic img {
+	width: 100%;
+	height: auto;
+}
+
+.contact-links {
+	width: 100%;
+	font-size: 1.25rem;
+}
+
+.contact-links p {
+	padding: 2rem;
+	margin: rem;
+}
+
+.social {
+	font-size: 2rem;
+}
+
+.fa-envelope, .fa-file-download {
+	margin: .7rem;
+	vertical-align: middle;
+}
+
+.contact-links span {
+	color: #f4f4f4 ;
+}
+
+.contact-links a {
+	color: #f4f4f4 ;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#hc-logo {
+	width: 2rem;
+	height: 2rem;
+}
+
+.contact-links a:hover {
+	color: #feda6a;
+	transition: all .5s ease;
+}
+
+#soundcloud:hover {
+	color: #ff7700;
+	transition: all 0.5s ease;
+}
+
+#youtube:hover {
+	color: #FF0000;
+	transition: all 0.5s ease;
+}
+
+#facebook:hover {
+	color: #4267B2;
+	transition: all 0.5s ease;
+}
+
+/*FOOTER*/
+
+footer {
+	background-color: #000;
+	font-size: 0.9rem;
+}
+
+.footer-text a {
+	text-decoration: none;
+	color: #6c757d;
+}
+
+.footer-text a:hover {
+	color: #f4f4f4;
+	transition: all .5s ease;
+}
+
+/*MUSIC - page*/
+
+.fa-chevron-left {
+	top: 1.5rem;
+	left: 1rem;
+	-webkit-text-stroke: 1px #fff;
+}
+
+.go-back {
+	text-decoration: none;
+	color: #494d49;
+}
+
+.go-back:hover {
+	cursor: pointer;
+	color: #feda6a;
+	transition: all .5s ease;
+	text-decoration: none;
+}
+
+.section-heading {
+	background-color: #feda6a;
+	padding: 2.5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.music-heading {
+	display: inline-block;
+	background-color: #494d49;
+	color: #f4f4f4;
+	filter: drop-shadow(.1rem .2rem .04em #494d49);
+}
+
+#more-media, #more-music {
+	display: none;
+}
+
+.music-btn {
+	background-color: #feda6a;
+	cursor: pointer;
+	font-weight: bold;
+	border: 1px solid #000;
+	padding: 1rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1366px) {
+	.music, .upcoming {
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.contact-links {
+		font-size: 1rem;
+	}
+	.anatomy p{
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.page-header {
+		background-position: 30% 70%;
+	}
+
+	.title {
+		left: 50%;
+		top: 30%;
+		padding: 0.2rem;
+	}
+
+	.title h1 {
+		font-size: 2.3rem;
+	}
+
+	.title p {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.upcoming .card {
+
+	max-width: 100%;
+	}
+
+	.datum > p {
+		display: inline-block;
+	}
+
+	.img-about {
+		display: none;
+	}
+
+	.contact-links {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 767px) {
+	 .navbar-collapse{
+		z-index: 10;
+		width: inherit;
+		padding: 0;
+	}
+	.navbar-nav {
+
+		background-image: url('../img/navbar-cover.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: 1px solid #000 ;
+
+	}
+
+	.card-border {
+		padding-right: 0;
+	}
+
+	.border-right {
+		border-bottom: solid 1px #cecece;
+	}
+
+	.page-header {
+		background-position: 35%;
+	}
+
+	.title {
+		left: 45%;
+		top: 26%;
+		padding: 0.2rem;
+	}
+
+	.title h1 {
+		font-size: 2rem;
+	}
+
+	.title p {
+		font-size: 1.6rem;
+	}
+
+	.hashtags {
+		padding: 1.5rem 2rem;
+	}
+
+	.main-heading, .main-heading-about,
+	.main-heading-contact, .section-heading,
+	.music-heading  {
+		padding: 2rem;
+		font-size: 1.8rem;
+	}
+
+	.main-heading-contact {
+		margin-bottom: -4.5rem;
+	}
+
+	.card-img-top {
+	    height: auto
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+	.button-custom {
+		padding: 0.8rem 1.8rem;
+		font-size: 0.8rem;
+	}
+
+	.music-btn {
+		font-size: .8rem;
+		padding: .8rem;
+	}
+
+	.music-cont {
+		justify-content: center!important;
+	}
+
+	.datum p, .card-body h5 {
+		font-size: 1.1rem;
+	}
+
+	.card-body p, .card-body a {
+		font-size: 0.8rem;
+	}
+
+	.about p, .anatomy p, .contact-links {
+		font-size: 1rem;
+	}
+
+	.social {
+		font-size: 1.8rem;
+	}
+
+	footer {
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (max-width: 350px) {
+
+.title h1 {
+		font-size: 1.7rem;
+	}
+
+	.social a {
+		font-size: 1.5rem;
+		margin: 0 .8rem !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
